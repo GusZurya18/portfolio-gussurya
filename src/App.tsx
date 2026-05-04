@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import CertificateDetail from "./pages/CertificateDetail";
+import Certificates from "./pages/Certificates";
+import ScrollToTop from "./components/effects/ScrollToTop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -19,10 +21,12 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/certificates" element={<Certificates />} />
           <Route path="/certificate/:id" element={<CertificateDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

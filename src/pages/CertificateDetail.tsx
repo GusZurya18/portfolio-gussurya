@@ -197,7 +197,7 @@ const CertificateDetail = () => {
               Check out other certifications and projects in the portfolio.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link to="/#certificates">
+              <Link to="/certificates">
                 <Button variant="outline" size="lg">
                   All Certificates <ArrowLeft size={16} className="ml-2 rotate-180" />
                 </Button>
